@@ -1,0 +1,75 @@
+/**index.wxss**/
+.header {
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:999;
+  width:100%;
+  background: #fff;
+}
+.header .container {
+  white-space: nowrap;
+  position: relative;
+}
+
+.header_holder{
+  height:21px
+}
+.header .container view {
+  width:120rpx;
+  text-align: center;
+  font-size: 30rpx;
+  display: inline-block;
+}
+
+.header .container view.active {
+  font-weight: bold;
+}
+
+.header .container .cur {
+  width:64rpx;
+  height: 6rpx;
+  background-color: #f8ca43;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  margin-left: 28rpx;
+  transition: 0.2 all ease;
+}
+
+.video_item {
+  position: relative;
+}
+.video_item .cover{
+  background-color: blue;
+  height : 422rpx;
+  width: 750rpx;
+}
+.video_item .title {
+  position: absolute;
+  left: 30rpx;
+  top: 25rpx;
+  font-size: 35rpx;
+  color: #fff;
+}
+.video_item .detail{
+  height: 100rpx;
+  background: #fff;
+}
+.video_item .detail button{
+  border: none;
+  background:none;
+  outline:none;
+  padding:0;
+}
+
+.footer {
+  position:fixed;
+  width: 750rpx;
+  height: 70rpx;
+  background:#fff;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+}
+

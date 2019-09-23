@@ -1,0 +1,3 @@
+<!--pages/take_vedio/vedio.wxml-->
+<camera style="width=750rpx;height:300rpx"></camera>
+<button bindtap="fnTake">take pic</button>

@@ -1,0 +1,31 @@
+
+<view class="header">
+  <scroll-view scroll-x="{{true}}" scroll-width-animation="{{true}}">
+    <view  class="container" >
+      <view>
+        <view class="{{now==index?'active':''}}" wx:for="{{tags}}" wx:key="{{index}}" bindtap="fnClick" data-index="{{index}}">{{item}}</view>
+      </view>
+      <view class="cur" style="left:{{left}}px;">
+      </view>
+    </view>    
+  </scroll-view>
+ </view> 
+ <view class="header_holder"></view>
+ <button bindtap="takePic" style="width:740rpx">拍照</button>
+<view class="video_list"> 
+  <view class="video_item" wx:for="{{list}}" wx:key="{{index}}">
+    <navigator url="/pages/detail/detail?id={{item.id}}">
+    <view class="cover"></view></navigator>
+    <text class="title">这是第一个视频</text>
+    <view class="detail">
+      <button size="mini" plain="{{true}}">已阅:11</button>
+      <button size="mini" plain="{{true}}">收藏:22</button>
+      <button size="mini" plain="{{true}}">分享</button>
+    </view>
+  </view>
+</view>
+
+
+
+<view class="footer">
+</view>
